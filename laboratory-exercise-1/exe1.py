@@ -1,3 +1,1 @@
-#first python code
-
-print('Hello motherfuckers!')
+print('Hello world !!!')
