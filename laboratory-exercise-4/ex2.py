@@ -3,7 +3,7 @@ list_age = []
 
 size_name = int(input('set size'))
 
-for name in range(size_name):
+for i in range(size_name):
     name = input('set name:')
     list_name.append(name)
     age = int(input('set age:'))
