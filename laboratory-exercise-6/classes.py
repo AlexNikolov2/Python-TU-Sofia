@@ -3,10 +3,16 @@ class Person:
         self.name = name
         self.age = age
         self.nationality = nationality
-        #calculate birth_year
+    #calculate birth_year
     def calculate_birth_year(self, current_year):
         birth_year = current_year - self.age
         return birth_year
+    #check for migranti
+    def check_person(self, nationality):
+        if nationality == 'bugarin':
+            return True
+        else:
+            return False
     #printing the person
     def print_person(self):
         return f"Hello! I am {self.name} and I am {self.age} years old {self.nationality}. I am born in {self.calculate_birth_year(current_year)}"
@@ -19,8 +25,11 @@ for i in range(size):
     name = input('name')
     age = int(input('age'))
     nationality = input('nationality')
-    person = Person(name, age, nationality).print_person()
+    person = Person(name, age, nationality)
     
-    people.append(person)
+    if(person.check_person(nationality) == True):
+        person_checked = Person(name, age, nationality).print_person()
+        people.append(person_checked)
+        
 
-print(people)
+print(*people, sep='\n')
