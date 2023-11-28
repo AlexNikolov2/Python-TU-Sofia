@@ -23,3 +23,10 @@ for i in range(size):
     numbers.append(number)
 phone_book = generate_phone_book(names, numbers)
 print_phone_book(phone_book)
+
+#delete
+
+name = input('delete name')
+delete_phone_book(phone_book, name)
+
+print_phone_book(phone_book)
