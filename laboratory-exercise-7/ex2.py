@@ -34,6 +34,7 @@ class SavingsAccount(Account):
     def calculate_interest(self):
         interest = self.interest_rate * self.balance
         print('interest:', interest)
+        return interest
     def calculate_balance_with_interest(self):
         print('balance:', self.balance)
         print('interest:', self.interest)
