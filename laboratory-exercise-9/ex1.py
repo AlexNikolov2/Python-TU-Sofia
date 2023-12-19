@@ -16,8 +16,8 @@ while True :
 for i in list0:
         if i % 3 == 0 and i % 2 == 0:
             list1.append(i)
-            for i in range(1, len(list1), 2):
-                sum_list1 += list1[i]
+            if list1.index(i) % 2 != 0:
+                sum_list1 += i
         if i % 7 == 0 and i % 2 != 0:
             list2.append(i)
             sorted(list2, reverse=True)
@@ -31,6 +31,7 @@ for i in list0:
         
 print(sum_list1)
 print(min_list2 * max_list2)       
+print(list1)
     
         
         
