@@ -26,6 +26,8 @@ def car_main():
     for car in sorted_cars:
         car.display_info()
         
-    
+    def list_brand():
+        brand  = input('set brand: ')
+        
 car_main()
                 
